@@ -24,10 +24,26 @@
     <main>
       <section class="intro">
         <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
+          <div class="intro__wrapper">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир <br> айсбергов и&nbsp;пингвинов</p>
+          </div>
+        </div>
+        <div class="intro__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="
+            ./img/background/intro-mobile.webp, ./img/background/intro-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="
+            ./img/background/intro-tablet.webp, ./img/background/intro-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="
+            ./img/background/intro-desktop.webp, ./img/background/intro-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="
+            ./img/background/intro-mobile.jpg, ./img/background/intro-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="
+            ./img/background/intro-tablet.jpg, ./img/background/intro-tablet@2x.jpg 2x">
+            <img src="./img/background/intro-desktop.jpg" srcset="./img/background/intro-desktop@2x 2x" width="1366"
+              height="650" alt="Ледники в Антарктике.">
+          </picture>
         </div>
       </section>
     </main>
