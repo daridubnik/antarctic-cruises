@@ -445,7 +445,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 a {
@@ -633,6 +633,81 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 103px;
+}
+
+.advantages {
+  position: relative;
+  min-height: 562px;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  padding: 110px 0;
+  max-width: 1160px;
+}
+
+.advantages__wrapper h2 {
+  margin: 0 0 49px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.advantages__wrapper ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__wrapper li {
+  position: relative;
+  padding: 80px 30px 30px 30px;
+  height: 100%;
+  min-height: 241px;
+  background-color: #f9fbfd;
+}
+
+.advantages__wrapper svg {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.advantages__wrapper h3 {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.advantages__wrapper p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.advantages__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e3ecf6;
+  z-index: -1;
+}
+
+.advantages img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 10%;
 }
 
 .btn {
@@ -900,6 +975,10 @@ button,
 */
 
 @media (min-width: 375px) {
+  .advantages__wrapper br {
+    display: none;
+  }
+
   .intro__wrapper br {
     display: none;
   }
@@ -908,6 +987,56 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
+  }
+
+  .advantages {
+    min-height: 588px;
+  }
+
+  .advantages__wrapper {
+    padding: 90px 0;
+  }
+
+  .advantages__wrapper h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__wrapper ul {
+    gap: 30px;
+  }
+
+  .advantages__wrapper li {
+    padding: 70px 15px 20px 20px;
+    min-width: 206px;
+  }
+
+  .advantages__wrapper svg {
+    top: 26px;
+    left: 20px;
+  }
+
+  .advantages__item--liner svg {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__item--check svg {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__item--boat svg {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantages__wrapper h3 {
+    line-height: 25.2px;
+  }
+
+  .advantages__wrapper p {
+    line-height: 20px;
   }
 
   .intro {
@@ -934,7 +1063,7 @@ button,
   }
 
   .travelling__wrapper {
-    padding: 90px 0;
+    padding: 91px 0 93px 0;
   }
 
   .travelling__content-wrapper {
@@ -948,7 +1077,7 @@ button,
   }
 
   .travelling__image-wrapper {
-    margin: 0;
+    margin: -1px 0 0 0;
   }
 
   .travelling__image-wrapper img {
@@ -960,6 +1089,38 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .advantages {
+    min-height: 997px;
+  }
+
+  .advantages__wrapper {
+    padding: 57px 0;
+  }
+
+  .advantages__wrapper h2 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages__wrapper ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__wrapper li {
+    min-width: 290px;
+  }
+
+  .advantages__wrapper h3 {
+    margin: 0 0 9px 0;
+  }
+
+  .advantages img {
+    -o-object-position: 0;
+    object-position: 0;
   }
 
   .intro {
@@ -1002,6 +1163,10 @@ button,
   .travelling__content-wrapper h2 {
     font-size: 24px;
     line-height: 33.6px;
+  }
+
+  .travelling__image-wrapper {
+    margin: 0;
   }
 
   .travelling__image-wrapper img {
