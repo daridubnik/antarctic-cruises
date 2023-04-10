@@ -135,7 +135,8 @@
                 <div class="catalog__item-flipper">
                   <div class="catalog__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/card/card-astoria.webp, ./img/card/card-astoria@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/card/card-astoria.webp, ./img/card/card-astoria@2x.webp 2x">
                       <img src="./img/card/card-astoria.jpg" srcset="./img/card/card-astoria@2x.jpg 2x" width="260"
                         height="386" alt="Ледяной айсберг и замерзший океан.">
                     </picture>
@@ -203,7 +204,8 @@
                 <div class="catalog__item-flipper">
                   <div class="catalog__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/card/card-atlantis.webp, ./img/card/card-atlantis@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/card/card-atlantis.webp, ./img/card/card-atlantis@2x.webp 2x">
                       <img src="./img/card/card-atlantis.jpg" srcset="./img/card/card-atlantis@2x.jpg 2x" width="260"
                         height="386" alt="Ледяной айсберг и замерзший океан.">
                     </picture>
@@ -237,7 +239,8 @@
                 <div class="catalog__item-flipper">
                   <div class="catalog__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/card/card-odysseus.webp, ./img/card/card-odysseus@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/card/card-odysseus.webp, ./img/card/card-odysseus@2x.webp 2x">
                       <img src="./img/card/card-odysseus.jpg" srcset="./img/card/card-odysseus@2x.jpg 2x" width="260"
                         height="386" alt="Ледяной айсберг и замерзший океан.">
                     </picture>
@@ -271,7 +274,8 @@
                 <div class="catalog__item-flipper">
                   <div class="catalog__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/card/card-olympia.webp, ./img/card/card-olympia@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/card/card-olympia.webp, ./img/card/card-olympia@2x.webp 2x">
                       <img src="./img/card/card-olympia.jpg" srcset="./img/card/card-olympia@2x.jpg 2x" width="260"
                         height="386" alt="Ледяной айсберг и замерзший океан.">
                     </picture>
@@ -373,7 +377,8 @@
                 <div class="catalog__item-flipper">
                   <div class="catalog__item-front">
                     <picture>
-                      <source type="image/webp" srcset="./img/card/card-minion-1.webp, ./img/card/card-minion-1@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/card/card-minion-1.webp, ./img/card/card-minion-1@2x.webp 2x">
                       <img src="./img/card/card-minion-1.jpg" srcset="./img/card/card-minion-1@2x.jpg 2x" width="260"
                         height="386" alt="Ледяной айсберг и замерзший океан.">
                     </picture>
@@ -406,6 +411,58 @@
             </ul>
           </div>
         </div>
+      </section>
+      <section class="reservation">
+        <div class="container">
+          <div class="reservation__wrapper">
+            <div class="reservation__content-wrapper">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3-6 месяцев <br> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="reservation__form form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+                <div>
+                  <label aria-label="Ваше имя.">
+                    <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                  </label>
+                </div>
+                <div>
+                  <label aria-label="Ваш номер телефона.">
+                    <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                  </label>
+                </div>
+                <div>
+                  <label aria-label="Ваша почта.">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                  </label>
+                </div>
+                <div class="form__checkbox">
+                  <label>
+                    <input type="checkbox" name="consent" value="agree" checked required>
+                    <span class="form__control-mark"></span>
+                    <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button type="submit">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="
+            ./img/background/reservation-mobile.webp, ./img/background/reservation-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="
+            ./img/background/reservation-tablet.webp, ./img/background/reservation-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="
+            ./img/background/reservation-desktop.webp, ./img/background/reservation-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="
+            ./img/background/reservation-mobile.jpg, ./img/background/reservation-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="
+            ./img/background/reservation-tablet.jpg, ./img/background/reservation-tablet@2x.jpg 2x">
+          <img src="./img/background/reservation-desktop.jpg" srcset="./img/background/reservation-desktop@2x.jpg 2x"
+            width="1366" height="555" alt="Ледники в Антарктике.">
+        </picture>
       </section>
     </main>
     <footer>

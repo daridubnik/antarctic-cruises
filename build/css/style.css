@@ -739,7 +739,7 @@ button,
 
 .catalog__wrapper {
   margin: 0 auto;
-  padding: 85px 0 110px 0;
+  padding: 85px 0 120px 0;
   max-width: 1130px;
 }
 
@@ -885,6 +885,10 @@ button,
   line-height: 21px;
   background-color: #f9fbfd;
   color: #011c40;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .catalog__item-back a.focus-visible:focus {
@@ -1010,6 +1014,145 @@ button,
   color: #15ab07;
 }
 
+.form {
+  padding: 43px 50px 50px 50px;
+  max-width: 403px;
+  background-color: #011c40;
+}
+
+.form p {
+  margin: 0 0 28px 0;
+  font-weight: 500;
+  color: #f9fbfd;
+}
+
+.form input {
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 11px 16px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #f9fbfd;
+  color: #011c40;
+}
+
+.form input.focus-visible:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 15px 1px #f9fbfd, inset 0 0 0 1.5px #011c40;
+  box-shadow: 0 0 15px 1px #f9fbfd, inset 0 0 0 1.5px #011c40;
+}
+
+.form input:disabled {
+  opacity: 50%;
+}
+
+.form input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__checkbox label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 23px;
+  min-height: 20px;
+}
+
+.form__control-label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 10px;
+  line-height: 12px;
+  color: #f9fbfd;
+}
+
+.form__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.form__checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.form__checkbox input[type=checkbox]:checked + .form__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 12px;
+  height: 9px;
+  background-image: url("../img/svg/checked.svg");
+  background-repeat: no-repeat;
+}
+
+.form__checkbox label:hover .form__control-mark {
+  -webkit-box-shadow: 0 0 10px 1px #f9fbfd;
+  box-shadow: 0 0 10px 1px #f9fbfd;
+}
+
+.form__checkbox input:focus-visible + .form__control-mark {
+  -webkit-box-shadow: 0 0 15px 1px #f9fbfd, inset 0 0 0 1.5px #011c40;
+  box-shadow: 0 0 15px 1px #f9fbfd, inset 0 0 0 1.5px #011c40;
+}
+
+.form button {
+  display: block;
+  margin: 28px 0 0 0;
+  padding: 10px 15px 11px 15px;
+  width: 100%;
+  min-height: 43px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  background-color: #f9fbfd;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.form button.focus-visible:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 10px 1px #f9fbfd;
+  box-shadow: 0 0 10px 1px #f9fbfd;
+}
+
+.form button:active {
+  opacity: 94%;
+}
+
+.form button:disabled {
+  opacity: 50%;
+}
+
 .intro {
   position: relative;
   min-height: 650px;
@@ -1053,6 +1196,58 @@ button,
   height: 100%;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.reservation {
+  position: relative;
+  min-height: 555px;
+}
+
+.reservation__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 60px;
+  max-width: 1160px;
+}
+
+.reservation__wrapper h2 {
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+}
+
+.reservation__wrapper p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.reservation__content-wrapper p {
+  margin: 0;
+}
+
+.reservation__form {
+  -ms-grid-column-align: end;
+  justify-self: end;
+}
+
+.reservation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .travelling__wrapper {
@@ -1200,7 +1395,7 @@ button,
   }
 
   .catalog__wrapper {
-    padding: 90px 15px;
+    padding: 90px 15px 100px 15px;
   }
 
   .catalog__wrapper h2 {
@@ -1242,6 +1437,30 @@ button,
   .intro img {
     -webkit-box-shadow: none;
     box-shadow: none;
+  }
+
+  .reservation__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 53px;
+    padding: 88px 0 100px 0;
+  }
+
+  .reservation__content-wrapper {
+    text-align: center;
+  }
+
+  .reservation__wrapper h2 {
+    margin: 0 0 4px 0;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.2px;
+  }
+
+  .reservation__form {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    margin: 0 0 0 1px;
   }
 
   .travelling__wrapper {
@@ -1306,7 +1525,7 @@ button,
   }
 
   .catalog__wrapper {
-    padding: 56px 10px;
+    padding: 56px 10px 65px 10px;
   }
 
   .catalog__wrapper h2 {
@@ -1326,6 +1545,33 @@ button,
 
   .catalog__item-front h3 {
     padding: 18px 25px;
+  }
+
+  .form {
+    padding: 34px 30px 40px 30px;
+  }
+
+  .form p {
+    text-align: center;
+    line-height: 25.5px;
+  }
+
+  .form__checkbox label {
+    padding: 0 0 0 28px;
+  }
+
+  .form__control-mark {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form__checkbox input[type=checkbox]:checked + .form__control-mark::before {
+    top: 6px;
+    left: 4px;
+  }
+
+  .form button {
+    margin: 30px 0 0 0;
   }
 
   .intro {
@@ -1351,6 +1597,30 @@ button,
   .intro img {
     -o-object-position: 45.5% 50%;
     object-position: 45.5% 50%;
+  }
+
+  .reservation__wrapper {
+    gap: 32px;
+    padding: 59px 0 65px 0;
+  }
+
+  .reservation__wrapper h2 {
+    margin: 0 0 14px 0;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .reservation__content-wrapper p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .reservation__content-wrapper br {
+    display: none;
+  }
+
+  .reservation__form {
+    margin: 0;
   }
 
   .travelling__wrapper {
@@ -1423,6 +1693,16 @@ button,
   }
 
   .catalog__item-back a:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0 0 10px 1px #f9fbfd;
+    box-shadow: 0 0 10px 1px #f9fbfd;
+  }
+
+  .form input:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0 0 10px 1px #f9fbfd;
+    box-shadow: 0 0 10px 1px #f9fbfd;
+  }
+
+  .form button:hover:not(.focus-visible) {
     -webkit-box-shadow: 0 0 10px 1px #f9fbfd;
     box-shadow: 0 0 10px 1px #f9fbfd;
   }
