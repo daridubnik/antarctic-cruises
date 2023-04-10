@@ -419,25 +419,29 @@
               <h2>Раннее бронирование</h2>
               <p>Забронируйте тур за&nbsp;3-6 месяцев <br> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
-            <div class="reservation__form form">
+            <div class="reservation__form form" data-form-validate="data-form-validate" data-callback="base">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
-                <div>
+                <div class="custom-input" data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению" data-required="data-required">
                   <label aria-label="Ваше имя.">
                     <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
                   </label>
                 </div>
-                <div>
+                <div class="custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                  data-required="data-required">
                   <label aria-label="Ваш номер телефона.">
                     <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
                   </label>
                 </div>
-                <div>
+                <div class="custom-input" data-validate-type="email" data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Неверный формат данных" data-on-input-validate data-required="data-required">
                   <label aria-label="Ваша почта.">
-                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off" required>
                   </label>
                 </div>
-                <div class="form__checkbox">
+                <div class="custom-input form__checkbox" data-validate-type="checkbox" data-on-input-validate
+                  data-message-base="Необходимо согласие">
                   <label>
                     <input type="checkbox" name="consent" value="agree" checked required>
                     <span class="form__control-mark"></span>
