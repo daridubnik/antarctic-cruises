@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {initMap} from './modules/map';
 
 // ---------------------------------
 
@@ -21,6 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
+
+// Map
+// ---------------------------------
+ymaps.ready(initMap);
+
 
 // ---------------------------------
 
