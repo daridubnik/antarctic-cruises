@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Map
 // ---------------------------------
-ymaps.ready(initMap);
+setTimeout(initMap, 3000);
 
 
 // ---------------------------------
