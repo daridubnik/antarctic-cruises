@@ -1006,6 +1006,113 @@ button,
   color: #f9fbfd;
 }
 
+.footer {
+  background-color: #011c40;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px auto auto;
+  grid-template-columns: 70px auto auto;
+  gap: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 49px 0;
+  max-width: 1160px;
+}
+
+.footer__logo-wrapper.focus-visible:focus {
+  opacity: 70%;
+}
+
+.footer__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__wrapper a {
+  color: #f9fbfd;
+}
+
+.footer__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__navigation li {
+  margin: 0 33px 0 0;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+.footer__navigation li.focus-visible:focus {
+  text-shadow: 0 0 10px #f9fbfd;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.footer__navigation a:active {
+  opacity: 70%;
+}
+
+.footer__navigation li:last-child {
+  margin: 0;
+}
+
+.footer__social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 -10px 0 0;
+}
+
+.footer__social-item {
+  position: relative;
+  margin: 0 0 0 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__social-item--odnoklassniki {
+  width: 32px;
+}
+
+.footer__social-item.focus-visible:focus {
+  opacity: 70%;
+}
+
+.footer__social a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px 10px 10px;
+}
+
+.footer__social a:active {
+  opacity: 50%;
+}
+
 .form {
   padding: 43px 50px 50px 50px;
   max-width: 403px;
@@ -1444,6 +1551,47 @@ button,
     display: block;
   }
 
+  .footer__wrapper {
+    -ms-grid-columns: 38px auto auto;
+    grid-template-columns: 38px auto auto;
+    gap: 25px;
+    padding: 42px 0;
+  }
+
+  .footer__logo-wrapper img {
+    width: 38px;
+    height: 20px;
+  }
+
+  .footer__navigation li {
+    margin: 0 23px 0 0;
+    font-size: 12px;
+    line-height: 14.6px;
+  }
+
+  .footer__social ul {
+    margin: 0 -8px 0 0;
+  }
+
+  .footer__social-item {
+    margin: 0 0 0 7px;
+    width: 32px;
+    height: 36px;
+  }
+
+  .footer__social-item--odnoklassniki {
+    width: 28px;
+  }
+
+  .footer__social a {
+    padding: 8px;
+  }
+
+  .footer__social svg {
+    width: 16px;
+    height: 16px;
+  }
+
   .intro {
     min-height: 638px;
   }
@@ -1600,7 +1748,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 36px;
-    padding: 59px 0;
+    padding: 59px 0 65px 0;
   }
 
   .contacts__map-wrapper {
@@ -1618,6 +1766,40 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+  }
+
+  .footer__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 0;
+  }
+
+  .footer__logo-wrapper img {
+    width: 42px;
+    height: 22px;
+  }
+
+  .footer__navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__navigation li {
+    margin: 0 0 17px 0;
+  }
+
+  .footer__social ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: -11px 0 0 -11px;
+  }
+
+  .footer__social-item {
+    margin: 0 7px 0 0;
   }
 
   .form {
@@ -1734,6 +1916,24 @@ button,
   }
 
   .contacts__bond--phone:hover:not(.focus-visible) {
+    opacity: 70%;
+  }
+
+  .footer__logo-wrapper:hover:not(.focus-visible) {
+    opacity: 70%;
+  }
+
+  .footer__navigation li:hover:not(.focus-visible) {
+    text-shadow: 0 0 10px #f9fbfd;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .footer__social-item:hover:not(.focus-visible) {
     opacity: 70%;
   }
 

@@ -1,0 +1,164 @@
+.footer {
+  background-color: $color-tangaroa;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  gap: 40px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 49px 0;
+  max-width: 1160px;
+
+  @include vp-1023 {
+    grid-template-columns: 38px auto auto;
+    gap: 25px;
+    padding: 42px 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 0;
+  }
+}
+
+.footer__logo-wrapper {
+  @include hover-focus {
+    opacity: 70%;
+  }
+}
+
+.footer__logo-wrapper img {
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.footer__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__wrapper a {
+  color: $color-alice-blue;
+}
+
+.footer__navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.footer__navigation li {
+  margin: 0 33px 0 0;
+  font-weight: 500;
+  line-height: 19.5px;
+
+  @include vp-1023 {
+    margin: 0 23px 0 0;
+    font-size: 12px;
+    line-height: 14.6px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 17px 0;
+  }
+
+  @include hover-focus {
+    text-shadow: 0 0 10px $color-alice-blue;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+}
+
+.footer__navigation a {
+  &:active {
+    opacity: 70%;
+  }
+}
+
+.footer__navigation li:last-child {
+  margin: 0;
+}
+
+.footer__social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 -10px 0 0;
+
+  @include vp-1023 {
+    margin: 0 -8px 0 0;
+  }
+
+  @include vp-767 {
+    justify-content: flex-start;
+    margin: -11px 0 0 -11px;
+  }
+}
+
+.footer__social-item {
+  position: relative;
+  margin: 0 0 0 8px;
+  width: 40px;
+  height: 40px;
+
+  @include vp-1023 {
+    margin: 0 0 0 7px;
+    width: 32px;
+    height: 36px;
+  }
+
+  @include vp-767 {
+    margin: 0 7px 0 0;
+  }
+
+  &--odnoklassniki {
+    width: 32px;
+
+    @include vp-1023 {
+      width: 28px;
+    }
+  }
+
+  @include hover-focus {
+    opacity: 70%;
+  }
+}
+
+.footer__social a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px 10px 10px;
+
+  @include vp-1023 {
+    padding: 8px;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
+}
+
+.footer__social svg {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+  }
+}
