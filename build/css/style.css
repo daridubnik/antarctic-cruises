@@ -1386,6 +1386,17 @@ button,
     line-height: 20px;
   }
 
+  .card--astoria img {
+    -o-object-position: 58% 50%;
+    object-position: 58% 50%;
+  }
+
+  .card--elaine img,
+  .card--minion-1 img {
+    -o-object-position: 51% 50%;
+    object-position: 51% 50%;
+  }
+
   .card__front h3 {
     padding: 28px 35px;
   }
@@ -1538,6 +1549,27 @@ button,
   .advantages img {
     -o-object-position: 0;
     object-position: 0;
+  }
+
+  .card--astoria img {
+    -o-object-position: 57% 50%;
+    object-position: 57% 50%;
+  }
+
+  .card--elaine img,
+  .card--minion-1 img {
+    -o-object-position: 52% 50%;
+    object-position: 52% 50%;
+  }
+
+  .card--odysseus img {
+    -o-object-position: 37% 50%;
+    object-position: 37% 50%;
+  }
+
+  .card--leonor img {
+    -o-object-position: 58% 50%;
+    object-position: 58% 50%;
   }
 
   .card__front h3 {
