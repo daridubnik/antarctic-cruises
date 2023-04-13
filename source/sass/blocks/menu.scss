@@ -1,0 +1,152 @@
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    margin: -8px 0 0 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.menu li {
+  margin: 0 0 0 34px;
+  font-weight: 500;
+  line-height: 19.5px;
+
+  @include vp-1023 {
+    margin: 0 0 0 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include hover-focus {
+    text-shadow: 0 0 10px $color-alice-blue;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px 0;
+  color: $color-alice-blue;
+
+  &:active {
+    opacity: 70%;
+  }
+}
+
+.menu__logo-wrapper {
+  display: none;
+}
+
+.menu button {
+  display: none;
+
+  @include vp-767 {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 24px;
+      height: 14px;
+      background-image: url("../img/svg/burger.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.menu.is-active {
+  @include vp-767 {
+    display: grid;
+    grid-template-rows: 42px auto;
+    gap: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88.8vw;
+    height: 100vh;
+    padding: 10px 5px;
+    background-color: $color-alice-blue;
+    overflow-y: auto;
+  }
+}
+
+.menu.is-active ul {
+  @include vp-767 {
+    display: block;
+    margin: 0;
+  }
+}
+
+.menu.is-active li {
+  @include vp-767 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    line-height: 21.9px;
+  }
+}
+
+.menu.is-active a {
+  @include vp-767 {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    color: $color-tangaroa;
+  }
+}
+
+.menu.is-active .menu__logo-wrapper {
+  @include vp-767 {
+    display: block;
+    width: 65px;
+  }
+}
+
+.menu.is-active .menu__logo-link {
+  @include vp-767 {
+    padding: 10px;
+    width: auto;
+  }
+}
+
+.menu.is-active button {
+  @include vp-767 {
+    position: absolute;
+    top: 19px;
+    right: 8px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/svg/cross.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

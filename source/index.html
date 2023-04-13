@@ -18,8 +18,42 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo-wrapper">
+            <a href="index.html">
+              <img src="./img/logo/logo.svg" width="70" height="38" alt="Логотип.">
+            </a>
+          </div>
+          <div class="header__menu menu">
+            <div class="menu__logo-wrapper">
+              <a class="menu__logo-link" href="index.html">
+                <img src="./img/logo/logo-dark.svg" width="42" height="22" alt="Логотип.">
+              </a>
+            </div>
+            <button class="menu__toggle" type="button">
+              <span class="visually-hidden">Открыть/закрыть меню</span>
+            </button>
+            <nav class="menu__navigation">
+              <ul>
+                <li>
+                  <a href="#advantages">Преимущества</a>
+                </li>
+                <li>
+                  <a href="#">Направления</a>
+                </li>
+                <li>
+                  <a href="#catalog">Ближайшие круизы</a>
+                </li>
+                <li>
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="intro">
@@ -575,7 +609,7 @@
         <div class="footer__wrapper">
           <div class="footer__logo-wrapper">
             <a href="index.html">
-                <img src="./img/logo/logo.svg" width="70" height="38" alt="Логотип.">
+              <img src="./img/logo/logo.svg" width="70" height="38" alt="Логотип.">
             </a>
           </div>
           <nav class="footer__navigation">

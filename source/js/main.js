@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initMap} from './modules/map';
+import {initMobileMenu} from './modules/menu';
 
 // ---------------------------------
 
@@ -26,6 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
 // Map
 // ---------------------------------
 setTimeout(initMap, 3000);
+
+// Menu
+// ---------------------------------
+initMobileMenu();
 
 
 // ---------------------------------
