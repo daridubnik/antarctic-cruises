@@ -65,8 +65,14 @@
   }
 }
 
-.reservation__content-wrapper br {
+.reservation__desktop-br {
   @include vp-767 {
+    display: none;
+  }
+}
+
+.reservation__mobile-br {
+  @media (min-width: $vp-360) {
     display: none;
   }
 }
@@ -84,12 +90,18 @@
   }
 }
 
-.reservation img {
+.reservation__image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-color: $color-pattens-blue;
   z-index: -1;
+}
+
+.reservation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

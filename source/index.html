@@ -108,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <div class="advantages__wrapper">
             <h2>Преимущества</h2>
@@ -160,7 +160,7 @@
           </picture>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <div class="catalog__wrapper">
             <h2>Ближайшие круизы</h2>
@@ -509,7 +509,8 @@
           <div class="reservation__wrapper">
             <div class="reservation__content-wrapper">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за&nbsp;3-6 месяцев <br> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+              <p>Забронируйте тур <br class="reservation__mobile-br"> за&nbsp;3-6 месяцев <br
+                  class="reservation__desktop-br"> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
             <div class="reservation__form form" data-form-validate="data-form-validate" data-callback="base">
               <form action="https://echo.htmlacademy.ru" method="post">
@@ -537,7 +538,8 @@
                   <label>
                     <input type="checkbox" name="consent" value="agree" checked required>
                     <span class="form__control-mark"></span>
-                    <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                    <span class="form__control-label">Я&nbsp;согласен на&nbsp;обработку <br> моих персональных
+                      данных</span>
                   </label>
                 </div>
                 <button type="submit">Оставить заявку</button>
@@ -545,22 +547,24 @@
             </div>
           </div>
         </div>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="
-            ./img/background/reservation-mobile.webp, ./img/background/reservation-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="
-            ./img/background/reservation-tablet.webp, ./img/background/reservation-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="
-            ./img/background/reservation-desktop.webp, ./img/background/reservation-desktop@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="
-            ./img/background/reservation-mobile.jpg, ./img/background/reservation-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="
-            ./img/background/reservation-tablet.jpg, ./img/background/reservation-tablet@2x.jpg 2x">
-          <img src="./img/background/reservation-desktop.jpg" srcset="./img/background/reservation-desktop@2x.jpg 2x"
-            width="1366" height="555" alt="Ледники в Антарктике.">
-        </picture>
+        <div class="reservation__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="
+              ./img/background/reservation-mobile.webp, ./img/background/reservation-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="
+              ./img/background/reservation-tablet.webp, ./img/background/reservation-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="
+              ./img/background/reservation-desktop.webp, ./img/background/reservation-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="
+              ./img/background/reservation-mobile.jpg, ./img/background/reservation-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="
+              ./img/background/reservation-tablet.jpg, ./img/background/reservation-tablet@2x.jpg 2x">
+            <img src="./img/background/reservation-desktop.jpg" srcset="./img/background/reservation-desktop@2x.jpg 2x"
+              width="1366" height="555" alt="Ледники в Антарктике.">
+          </picture>
+        </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
             <h2 class="visually-hidden">Контакты</h2>
