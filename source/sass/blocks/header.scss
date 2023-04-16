@@ -26,19 +26,21 @@
   }
 }
 
-.header__logo-wrapper {
-  @include hover-focus {
+.header__logo-link {
+  display: block;
+
+  @include hover {
     opacity: 70%;
   }
 }
 
-.header__wrapper.menu-opened .header__logo-wrapper {
+.header__wrapper.menu-opened .header__logo-link {
   @include vp-767 {
     display: none;
   }
 }
 
-.header__logo-wrapper img {
+.header__logo-link img {
   @include vp-1023 {
     width: 38px;
     height: 20px;
