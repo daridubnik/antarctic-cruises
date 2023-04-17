@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Map
 // ---------------------------------
-setTimeout(initMap, 3000);
+initMap();
 
 // Menu
 // ---------------------------------

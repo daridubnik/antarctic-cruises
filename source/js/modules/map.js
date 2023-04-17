@@ -1,4 +1,4 @@
-const initMap = () => {
+const createMap = () => {
   const ymaps = window.ymaps;
 
   ymaps.ready(function () {
@@ -16,6 +16,15 @@ const initMap = () => {
 
     map.geoObjects.add(placemark);
   });
+};
+
+const initMap = () => {
+  setTimeout(() => {
+    const elem = document.createElement('script');
+    elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=4e60ec5c-cc12-418e-bd31-5a60b25aa76e&lang=ru_RU';
+    document.querySelector('body').appendChild(elem);
+    elem.onload = () => window.ymaps.ready(createMap);
+  }, 3000);
 };
 
 export {initMap};
