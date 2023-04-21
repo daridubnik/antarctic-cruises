@@ -712,8 +712,8 @@ button,
 }
 
 .card {
-  min-height: 386px;
   color: #f9fbfd;
+  aspect-ratio: 130/193;
   -webkit-perspective: 1200px;
   perspective: 1200px;
 }
@@ -794,7 +794,14 @@ button,
 }
 
 .card__back {
-  padding: 28px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 28px 25px 35px 25px;
   background-color: #011c40;
   overflow-y: auto;
   -webkit-transform: rotateY(-180deg);
@@ -874,7 +881,10 @@ button,
 
 .catalog__item ul {
   display: block;
-  margin: 0 0 25px 0;
+  margin: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .contacts__wrapper {
@@ -889,6 +899,10 @@ button,
   margin: 0 auto;
   padding: 120px 0;
   max-width: 1160px;
+}
+
+.contacts__map-wrapper {
+  overflow: auto;
 }
 
 .contacts__map {
@@ -1514,6 +1528,14 @@ button,
 }
 
 @media (max-width: 1080px) {
+  .card__back {
+    padding: 21px 18px;
+  }
+
+  .catalog__wrapper ul {
+    gap: 20px;
+  }
+
   .footer__navigation li {
     margin: 0 16px 0 0;
   }
@@ -1574,6 +1596,10 @@ button,
     line-height: 20px;
   }
 
+  .card {
+    aspect-ratio: 309/386;
+  }
+
   .card--astoria img {
     -o-object-position: 58% 50%;
     object-position: 58% 50%;
@@ -1590,7 +1616,7 @@ button,
   }
 
   .card__back {
-    padding: 28px 35px;
+    padding: 28px 35px 35px 35px;
   }
 
   .catalog__wrapper {
@@ -1605,6 +1631,7 @@ button,
   .catalog__wrapper ul {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .contacts__wrapper {
@@ -1816,6 +1843,12 @@ button,
     object-position: 0;
   }
 
+  .card {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 135/193;
+  }
+
   .card--astoria img {
     -o-object-position: 57% 50%;
     object-position: 57% 50%;
@@ -1842,7 +1875,7 @@ button,
   }
 
   .card__back {
-    padding: 28px 25px;
+    padding: 28px 25px 35px 25px;
   }
 
   .catalog__wrapper {
@@ -1858,6 +1891,7 @@ button,
   .catalog__wrapper ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .contacts__wrapper {

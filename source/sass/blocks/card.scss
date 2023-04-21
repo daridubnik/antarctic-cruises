@@ -1,8 +1,18 @@
 .card {
-  min-height: 386px;
   color: $color-alice-blue;
+  aspect-ratio: 130/193;
 
   perspective: 1200px;
+
+  @include vp-1023 {
+    aspect-ratio: 309/386;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 135/193;
+  }
 
   @include focus {
     outline: none;
@@ -115,18 +125,24 @@
 }
 
 .card__back {
-  padding: 28px 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 25px 35px 25px;
   background-color: $color-tangaroa;
   overflow-y: auto;
 
   transform: rotateY(-180deg);
 
+  @media (max-width: 1080px) {
+    padding: 21px 18px;
+  }
+
   @include vp-1023 {
-    padding: 28px 35px;
+    padding: 28px 35px 35px 35px;
   }
 
   @include vp-767 {
-    padding: 28px 25px;
+    padding: 28px 25px 35px 25px;
   }
 }
 
